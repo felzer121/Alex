@@ -84,21 +84,24 @@
   font-family: 'ProximaNova', sans-serif;
   width: 100%;
 }
-
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 @media (max-width: 1300px) {
   .first__container {
     flex-direction: column;
+    height: 100%;
+    margin-bottom: 50px;
   }
   .first__content {
     order: 2;
     max-width: 90% !important;
   }
+  .first {
+    height: 100% !important;
+  }
   .first__svg {
     margin-top: 50px!important;
-    max-height: 400px;
     order: 1;
     position: relative!important;
     img {
@@ -120,6 +123,9 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   }
   .contact__illustration {
     margin-left: -70px;
+  }
+  .services__itemSvg {
+    margin-top: 10px;
   }
   .services__itemContent {
     flex-direction: column;
