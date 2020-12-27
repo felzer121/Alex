@@ -1,0 +1,140 @@
+/* You can add global styles to this file, and also import other style files */
+*{
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: 'ProximaNova';
+  src: url('assets/font/ProximaNova-Black.eot');
+  src: url('assets/font/ProximaNova-Black.eot?#iefix') format('embedded-opentype'),
+  url('assets/font/ProximaNova-Black.woff') format('woff'),
+  url('assets/font/ProximaNova-Black.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ProximaNova';
+  src: url('assets/font/ProximaNova-Bold.eot');
+  src: url('assets/font/ProximaNova-Bold.eot?#iefix') format('embedded-opentype'),
+  url('assets/font/ProximaNova-Bold.woff') format('woff'),
+  url('assets/font/ProximaNova-Bold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ProximaNova';
+  src: url('assets/font/ProximaNova-Regular.eot');
+  src: url('assets/font/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
+  url('assets/font/ProximaNova-Regular.woff') format('woff'),
+  url('assets/font/ProximaNova-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.button {
+  cursor: pointer;
+  text-decoration: none;
+  transition: .5s;
+  position: relative;
+  :hover .button__frontShadow {
+    opacity: .5;
+  }
+  &__front {
+    cursor: pointer;
+    padding: 20px 60px!important;
+    background: linear-gradient(180deg, #0EDDAB 0%, #0FC5AF 100%);
+    border-radius: 100px!important;
+    font-size: 24px;
+    font-weight: 900;
+    position: relative;
+    color: #FFFFFF;
+    &Shadow {
+      height: 50px;
+      width: 80%;
+      transition: .5s;
+      position: absolute;
+      bottom: 0;
+      background: #0EDDAB;
+      opacity: 0.3;
+      filter: blur(35px);
+      border-radius: 100px;
+    }
+  }
+}
+
+.title {
+  font-weight: 900!important;
+  padding: 100px 0 80px 0!important;
+  font-size: 48px!important;
+  line-height: 109.2%!important;
+  color: #FFFFFF;
+}
+
+.container {
+  background-color: #160032;
+  display: flex;
+  justify-content: center;
+}
+.content {
+  max-width: 1310px;
+  font-family: 'ProximaNova', sans-serif;
+  width: 100%;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+@media (max-width: 1300px) {
+  .first__container {
+    flex-direction: column;
+  }
+  .first__content {
+    order: 2;
+    max-width: 90% !important;
+  }
+  .first__svg {
+    margin-top: 50px!important;
+    max-height: 400px;
+    order: 1;
+    position: relative!important;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+@media (max-width: 1250px) {
+  .services__itemBottom {
+    flex-direction: column;
+  }
+  .services__price {
+    align-items: center;
+    padding-bottom: .5em;
+  }
+  .header__social, .footer__contact {
+    margin-left: 35px!important;
+  }
+  .contact__illustration {
+    margin-left: -70px;
+  }
+  .services__itemContent {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 950px) {
+  .contact__illustration {
+   display: none;
+  }
+  .contact__form {
+    width: 100% !important;
+  }
+  .button__contact {
+    display: flex!important;
+    margin: auto!important;
+  }
+}

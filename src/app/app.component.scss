@@ -1,0 +1,33 @@
+.container {
+  overflow: hidden;
+}
+app-header, app-services, app-works, app-contact {
+  z-index: 10;
+  width: 100%;
+  position: relative;
+}
+app-reviews {
+  width: 100%;
+}
+.box {
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
+.box__content {
+  display: flex;
+  justify-content: flex-start;
+}
+.fon__header {
+  position: absolute;
+  top: 0;
+}
+.fon__form {
+  position: absolute;
+  left: 0;
+}
+@media (max-width: 1360px) {
+  .container {
+    padding: 0 30px;
+  }
+}
