@@ -20,6 +20,9 @@
   .carousel-dots {
     bottom: -50px!important;
   }
+  .carousel-dots div:nth-child(5), .carousel-dots div:nth-child(6) {
+    display: none!important;
+  }
   .carousel-dot {
     padding: 2px;
     border: none!important;
