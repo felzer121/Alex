@@ -16,6 +16,8 @@ import { MatInputModule } from "@angular/material/input";
 import { MatCheckboxModule } from "@angular/material/checkbox";
 import { FooterComponent } from './component/footer/footer.component';
 import { SomeDataService } from './services/some.service';
+import { NgxPageScrollCoreModule } from 'ngx-page-scroll-core';
+import {MatTooltipModule} from "@angular/material/tooltip";
 
 @NgModule({
   declarations: [
@@ -35,7 +37,9 @@ import { SomeDataService } from './services/some.service';
     IvyCarouselModule,
     MatFormFieldModule,
     MatInputModule,
-    MatCheckboxModule
+    MatCheckboxModule,
+    NgxPageScrollCoreModule,
+    MatTooltipModule
   ],
   providers: [
     SomeDataService,

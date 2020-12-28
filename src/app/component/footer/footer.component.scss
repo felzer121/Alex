@@ -44,3 +44,42 @@
 .container__footer {
   background-color: #14002E;
 }
+.footer__menu {
+  li {
+    margin-top: 10px;
+    height: 20px;
+    position: relative;
+    padding-bottom: .5em;
+    cursor: pointer;
+  }
+  li:before, .active:before {
+    display: block;
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 0;
+    background: #ffffff;
+    transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+    left: 50%;
+    bottom: 0;
+  }
+  li:after, .active:after {
+    display: block;
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 0;
+    background-color: #ffffff;
+    transition: width 0.3s ease-in-out;
+    left: 50%;
+    bottom: 0;
+  }
+  li:hover:before, .active:before {
+    width: 50%;
+    color: #000;
+    left: 0!important;
+  }
+  li:hover:after, .active:after {
+    width: 50%;
+  }
+}

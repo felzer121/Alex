@@ -9,8 +9,15 @@
     display: flex;
     justify-content: space-between;
   }
+  &__listItem:not(:last-child) {
+    padding-bottom: 11px;
+  }
   &__listItem {
     display: flex;
+    align-items: center;
+    svg {
+      margin-left: 5px;
+    }
   }
   &__item {
     position: relative;
@@ -79,11 +86,8 @@
     flex-direction: column;
   }
   &__itemLabel{
-    font-size: 18px;
+    font-size: 16px;
     line-height: 22px;
     color: #160032;
-    &:not(:last-child) {
-      padding-bottom: 11px;
-    }
   }
 }

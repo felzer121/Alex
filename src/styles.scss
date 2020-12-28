@@ -117,6 +117,13 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   .services__itemBottom {
     flex-direction: column;
   }
+  .services__item h4{
+    white-space: nowrap;
+    font-size: 20px!important;
+  }
+  .services__itemContent {
+    height: 300px;
+  }
   .services__price {
     align-items: center;
     padding-bottom: .5em;

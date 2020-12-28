@@ -4,10 +4,10 @@
       <a href=""><img src="assets/img/logo.png" alt=""></a>
       <div [ngClass]="'footer__box'">
         <menu [ngClass]="'footer__menu'">
-          <li>Услуги</li>
-          <li>Портфолио</li>
-          <li>Отзывы</li>
-          <li>Связаться</li>
+          <li (click)="toServices()">Услуги</li>
+          <li (click)="toWorks()">Портфолио</li>
+          <li (click)="toReviews()">Отзывы</li>
+          <li (click)="toContact()">Связаться</li>
         </menu>
         <div [ngClass]="'footer__contact'">
           <span [ngClass]="'footer__info'">+7 (952) 037-12-62</span>
