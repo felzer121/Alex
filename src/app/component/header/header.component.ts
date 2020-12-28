@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit, ViewChild} from '@angular/core';
+import { ViewportScroller } from '@angular/common';
 
 @Component({
   selector: 'app-header',
@@ -6,8 +7,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
+  // @ViewChild('target') targetElement: any;
+  constructor(
+    private viewportScroller: ViewportScroller,
+  ) {}
 
-  constructor() { }
+  toTop() {
+    // const height = this.targetElement.nativeElement.offsetHeight;
+    this.viewportScroller.scrollToPosition([0, 4000]);
+  }
 
   ngOnInit(): void {
   }

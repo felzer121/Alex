@@ -66,6 +66,9 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
 .title {
   font-weight: 900!important;
   padding: 100px 0 80px 0!important;
@@ -130,6 +133,12 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   .services__itemContent {
     flex-direction: column;
     align-items: center;
+  }
+  .footer__menu {
+    flex-direction: column;
+  }
+  .footer__menu li:not(:last-child) {
+    margin: 0 0 .5em 0;
   }
 }
 @media (max-width: 950px) {

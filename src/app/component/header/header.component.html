@@ -42,7 +42,7 @@
       <img src="assets/svg/message.svg" [ngClass]="'first__message'" alt="">
       <h2>Разработка интерфейсов для вашего бизнеса</h2>
       <p>Помогаем бизнесу развиваться с помощью создания сайтов, мобильных приложений, а также настольных приложений</p>
-      <a href="" [ngClass]="'button'">
+      <a (click)="toTop()" [ngClass]="'button'">
         <button mat-raised-button color="warn" [ngClass]="'button__front'">
           <div [ngClass]="'button__frontShadow'"></div>
           Заказать разработку
