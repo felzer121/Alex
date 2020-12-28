@@ -12,7 +12,7 @@ export class ReviewsComponent implements OnInit {
   // @ts-ignore
   @ViewChild ('reviews') contact: ElementRef;
   constructor(private someSrv: SomeDataService) {
-    setTimeout(() => { someSrv.reviews = this.contact.nativeElement.offsetHeight;  }, 500);
+    setTimeout(() => { someSrv.reviews = this.contact.nativeElement.offsetHeight; }, 500);
   }
   test:number = 3;
   ngOnInit(): void {
