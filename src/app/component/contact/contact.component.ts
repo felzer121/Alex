@@ -9,7 +9,6 @@ import {Component, OnInit, ViewEncapsulation} from '@angular/core';
 export class ContactComponent implements OnInit {
 
   constructor() { }
-
   ngOnInit(): void {
   }
 
