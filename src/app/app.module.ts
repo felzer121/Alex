@@ -11,10 +11,11 @@ import { WorksComponent } from './component/works/works.component';
 import { ReviewsComponent } from './component/reviews/reviews.component';
 import {IvyCarouselModule} from "angular-responsive-carousel";
 import { ContactComponent } from './component/contact/contact.component';
-import {MatFormFieldModule} from "@angular/material/form-field";
-import {MatInputModule} from "@angular/material/input";
-import {MatCheckboxModule} from "@angular/material/checkbox";
+import { MatFormFieldModule } from "@angular/material/form-field";
+import { MatInputModule } from "@angular/material/input";
+import { MatCheckboxModule } from "@angular/material/checkbox";
 import { FooterComponent } from './component/footer/footer.component';
+import { SomeDataService } from './services/some.service';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,9 @@ import { FooterComponent } from './component/footer/footer.component';
     MatInputModule,
     MatCheckboxModule
   ],
-  providers: [],
+  providers: [
+    SomeDataService,
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

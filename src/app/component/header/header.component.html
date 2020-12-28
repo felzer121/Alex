@@ -1,12 +1,12 @@
-<div [ngClass]="'first'">
+<div #header [ngClass]="'first'">
   <header [ngClass]="'header'">
     <a href=""><img src="assets/img/logo.png" alt=""></a>
     <div [ngClass]="'header__content'">
       <menu [ngClass]="'header__menu'">
-        <li>Услуги</li>
-        <li>Портфолио</li>
-        <li>Отзывы</li>
-        <li>Связаться</li>
+        <li (click)="toServices()">Услуги</li>
+        <li (click)="toWorks()">Портфолио</li>
+        <li (click)="toReviews()">Отзывы</li>
+        <li (click)="toContact()">Связаться</li>
       </menu>
       <div [ngClass]="'header__social'">
         <a href="https://www.behance.net/damirmansurov">
@@ -42,7 +42,7 @@
       <img src="assets/svg/message.svg" [ngClass]="'first__message'" alt="">
       <h2>Разработка интерфейсов для вашего бизнеса</h2>
       <p>Помогаем бизнесу развиваться с помощью создания сайтов, мобильных приложений, а также настольных приложений</p>
-      <a (click)="toTop()" [ngClass]="'button'">
+      <a (click)="toContact()" [ngClass]="'button'">
         <button mat-raised-button color="warn" [ngClass]="'button__front'">
           <div [ngClass]="'button__frontShadow'"></div>
           Заказать разработку

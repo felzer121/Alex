@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, ElementRef, OnInit, ViewChild} from '@angular/core';
 import { ViewportScroller } from '@angular/common';
+import {SomeDataService} from "../../services/some.service";
 
 @Component({
   selector: 'app-services',
@@ -8,14 +9,15 @@ import { ViewportScroller } from '@angular/common';
 })
 export class ServicesComponent implements OnInit {
 
-  constructor(
-    private viewportScroller: ViewportScroller,
-  ) {}
-
+  // @ts-ignore
+  @ViewChild ('services') contact: ElementRef;
+  constructor(private someSrv: SomeDataService) {
+    setTimeout(() => { someSrv.services = this.contact.nativeElement.offsetHeight;  }, 500);
+  }
   ngOnInit(): void {
   }
   toTop() {
     // const height = this.targetElement.nativeElement.offsetHeight;
-    this.viewportScroller.scrollToPosition([0, 4000]);
+    // this.viewportScroller.scrollToPosition([0, 4000]);
   }
 }

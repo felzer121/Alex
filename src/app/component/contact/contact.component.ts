@@ -1,4 +1,6 @@
-import {Component, OnInit, ViewEncapsulation} from '@angular/core';
+import {Component, ElementRef, OnInit, ViewChild, ViewEncapsulation} from '@angular/core';
+import {SomeDataService} from "../../services/some.service";
+import { ViewportScroller } from '@angular/common';
 
 @Component({
   selector: 'app-contact',
@@ -7,9 +9,8 @@ import {Component, OnInit, ViewEncapsulation} from '@angular/core';
   encapsulation: ViewEncapsulation.None
 })
 export class ContactComponent implements OnInit {
-
-  constructor() { }
+  constructor() {
+  }
   ngOnInit(): void {
   }
-
 }

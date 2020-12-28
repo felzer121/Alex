@@ -1,4 +1,5 @@
-import {Component, OnInit, ViewEncapsulation} from '@angular/core';
+import {Component, ElementRef, OnInit, ViewChild, ViewEncapsulation} from '@angular/core';
+import {SomeDataService} from "../../services/some.service";
 
 @Component({
   selector: 'app-reviews',
@@ -8,7 +9,11 @@ import {Component, OnInit, ViewEncapsulation} from '@angular/core';
 })
 export class ReviewsComponent implements OnInit {
 
-  constructor() { }
+  // @ts-ignore
+  @ViewChild ('reviews') contact: ElementRef;
+  constructor(private someSrv: SomeDataService) {
+    setTimeout(() => { someSrv.reviews = this.contact.nativeElement.offsetHeight;  }, 500);
+  }
   test:number = 3;
   ngOnInit(): void {
     if(document.body.clientWidth < 1300) {
