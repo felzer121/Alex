@@ -129,5 +129,8 @@
       }
     }
   },
-  "defaultProject": "alexis"
+  "defaultProject": "alexis",
+  "cli": {
+    "analytics": "1ffd3261-147c-49a2-8153-f0ea0254e856"
+  }
 }
