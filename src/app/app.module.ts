@@ -9,7 +9,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from "@angular/material/button";
 import { WorksComponent } from './component/works/works.component';
 import { ReviewsComponent } from './component/reviews/reviews.component';
-import {IvyCarouselModule} from "angular-responsive-carousel";
+import { IvyCarouselModule } from "angular-responsive-carousel";
 import { ContactComponent } from './component/contact/contact.component';
 import { MatFormFieldModule } from "@angular/material/form-field";
 import { MatInputModule } from "@angular/material/input";
@@ -17,7 +17,9 @@ import { MatCheckboxModule } from "@angular/material/checkbox";
 import { FooterComponent } from './component/footer/footer.component';
 import { SomeDataService } from './services/some.service';
 import { NgxPageScrollCoreModule } from 'ngx-page-scroll-core';
-import {MatTooltipModule} from "@angular/material/tooltip";
+import { MatTooltipModule } from "@angular/material/tooltip";
+import { DialogDataExampleDialogComponent } from './component/dialog/dialog-data-example-dialog/dialog-data-example-dialog.component';
+import {MatDialogModule} from "@angular/material/dialog";
 
 @NgModule({
   declarations: [
@@ -27,7 +29,8 @@ import {MatTooltipModule} from "@angular/material/tooltip";
     WorksComponent,
     ReviewsComponent,
     ContactComponent,
-    FooterComponent
+    FooterComponent,
+    DialogDataExampleDialogComponent
   ],
   imports: [
     BrowserModule,
@@ -39,7 +42,8 @@ import {MatTooltipModule} from "@angular/material/tooltip";
     MatInputModule,
     MatCheckboxModule,
     NgxPageScrollCoreModule,
-    MatTooltipModule
+    MatTooltipModule,
+    MatDialogModule
   ],
   providers: [
     SomeDataService,

@@ -48,8 +48,10 @@
   &__title {
     display: flex;
     img {
+      object-fit: cover!important;
       border-radius: 50%;
       max-width: 80px;
+      max-height: 80px;
     }
   }
 }

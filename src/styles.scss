@@ -65,7 +65,9 @@
     }
   }
 }
-
+.burger {
+  display: none;
+}
 html {
   scroll-behavior: smooth;
 }
@@ -152,11 +154,53 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   .contact__illustration {
    display: none;
   }
+  .burger {
+    display: flex;
+  }
+  .header__content {
+   display: none!important;
+  }
   .contact__form {
     width: 100% !important;
   }
   .button__contact {
     display: flex!important;
     margin: auto!important;
+  }
+}
+@media (max-width: 900px) {
+  .services__container {
+    flex-wrap: wrap;
+  }
+  .services__item {
+    max-width: 100% !important;
+  }
+  .services__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 750px) {
+  .footer__menu {
+    order: 2;
+  }
+  .footer__box {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .footer__contact {
+    margin: 60px 0 0 0!important;
+    order: 1;
+  }
+  .footer__logo  {
+    position: absolute;
+  }
+  .footer__info {
+    font-size: 18px!important;
+    margin-bottom: 10px!important;
+  }
+  .footer__menu li {
+    margin: 0 0 10px 0!important;
+    font-size: 16px;
+    font-weight: 400;
   }
 }
