@@ -20,6 +20,7 @@ import { NgxPageScrollCoreModule } from 'ngx-page-scroll-core';
 import { MatTooltipModule } from "@angular/material/tooltip";
 import { DialogDataExampleDialogComponent } from './component/dialog/dialog-data-example-dialog/dialog-data-example-dialog.component';
 import {MatDialogModule} from "@angular/material/dialog";
+import {MatSidenavModule} from "@angular/material/sidenav";
 
 @NgModule({
   declarations: [
@@ -43,7 +44,8 @@ import {MatDialogModule} from "@angular/material/dialog";
     MatCheckboxModule,
     NgxPageScrollCoreModule,
     MatTooltipModule,
-    MatDialogModule
+    MatDialogModule,
+    MatSidenavModule
   ],
   providers: [
     SomeDataService,

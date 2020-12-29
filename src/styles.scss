@@ -72,6 +72,7 @@ html {
   scroll-behavior: smooth;
 }
 .title {
+  margin: 0!important;
   font-weight: 900!important;
   padding: 100px 0 80px 0!important;
   font-size: 48px!important;
@@ -82,6 +83,9 @@ html {
 .container {
   background-color: #160032;
   display: flex;
+  box-sizing: border-box;
+  width: 100%;
+  position: relative;
   justify-content: center;
 }
 .content {
@@ -178,10 +182,25 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   .services__item:not(:last-child) {
     margin-bottom: 30px;
   }
+  .mat-checkbox-layout .mat-checkbox-label {
+    font-size: 14px;
+  }
+  .mat-checkbox-inner-container {
+    top: 6px!important;
+  }
 }
 @media (max-width: 750px) {
   .footer__menu {
     order: 2;
+  }
+  .portfolio__item {
+    max-width: 100% !important;
+  }
+  .portfolio__content {
+    height: auto!important;
+  }
+  .contact__form p {
+    font-size: 18px!important;
   }
   .footer__box {
     width: 100%;
@@ -191,6 +210,9 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     margin: 60px 0 0 0!important;
     order: 1;
   }
+  .title {
+    font-size: 30px!important;
+  }
   .footer__logo  {
     position: absolute;
   }
@@ -198,9 +220,60 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     font-size: 18px!important;
     margin-bottom: 10px!important;
   }
+  .services__item h4 {
+    text-align: center;
+  }
   .footer__menu li {
     margin: 0 0 10px 0!important;
     font-size: 16px;
     font-weight: 400;
+  }
+  .first__content h2 {
+    text-align: center;
+    font-size: 30px!important;
+  }
+  .first__content p {
+    text-align: center;
+    font-size: 20px;
+  }
+  .first__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .services__itemContent {
+    height: auto!important;
+  }
+}
+@media (max-width: 450px) {
+  .services__item h4 {
+    white-space: normal;
+  }
+  .button__front {
+    padding: 15px 35px !important;
+  }
+  .container {
+    padding: 0 15px;
+  }
+  .first__content h2 {
+    font-size: 24px!important;
+  }
+  .portfolio__button {
+    margin: 30px 0 50px 0!important;
+  }
+  .first__content p{
+    font-size: 16px!important;
+  }
+  .mat-button-wrapper {
+    font-size: 18px;
+  }
+  .title {
+    padding: 50px 0 40px 0 !important;
+  }
+  .footer__info {
+    font-size: 16px !important;
+  }
+  .footer {
+    padding: 15px!important;
   }
 }

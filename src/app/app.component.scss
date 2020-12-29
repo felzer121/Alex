@@ -9,6 +9,57 @@ app-header, app-services, app-works, app-contact {
 app-reviews {
   width: 100%;
 }
+.modal__title {
+  box-sizing: border-box;
+  padding: 15px 15px 0 15px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.modal__bot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.modal__social a:not(:last-child) {
+  margin-right: 10px;
+}
+.modal__span {
+  font-size: 12px;
+  line-height: 15px;
+  color: #FFFFFF;
+}
+.modal__info {
+  white-space: nowrap;
+  display: flex;
+  flex-direction: column;
+}
+mat-drawer {
+  max-width: 225px;
+  width: 100%;
+  background: #160033;
+}
+.header__menu{
+  padding: 25px 15px 15px 15px;
+  list-style: none;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #FFFFFF;
+}
+.header__menu li{
+  margin-bottom: 10px;
+}
+.burger {
+  z-index: 100;
+  position: absolute;
+  background: transparent;
+  box-shadow: none;
+  min-width: 36px;
+  padding: 0;
+  right: 15px;
+  top: 15px;
+}
 .box {
   display: flex;
   position: relative;
