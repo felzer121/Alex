@@ -22,6 +22,8 @@ export class WorksComponent implements OnInit {
 
   animal: string | undefined;
   name: string | undefined;
+  show: boolean = true;
+  button: boolean = false;
 
   openDialog(): void {
     this.someSrv.title = 'Разработка landing page для компании Richersup';
@@ -36,7 +38,10 @@ export class WorksComponent implements OnInit {
       this.animal = result;
     });
   }
-
+  toProject(): void {
+    this.show = false;
+    this.button = true;
+  }
   ngOnInit(): void {
   }
 

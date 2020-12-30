@@ -1,5 +1,8 @@
 .reviews {
   padding-bottom: 140px;
+  &__titleContent a{
+    color: #160032;
+  }
   &__item {
     padding: 30px;
     box-shadow: 0 15px 35px rgba(22, 8, 54, 0.5);

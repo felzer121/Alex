@@ -66,7 +66,7 @@
   }
 }
 .burger {
-  display: none;
+  display: none!important;
 }
 html {
   scroll-behavior: smooth;
@@ -171,6 +171,9 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     display: flex!important;
     margin: auto!important;
   }
+  .burger {
+    display: flex!important;
+  }
 }
 @media (max-width: 900px) {
   .services__container {
@@ -178,6 +181,10 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   }
   .services__item {
     max-width: 100% !important;
+    font-weight: 600;
+  }
+  .services__item h4{
+    font-weight: 600;
   }
   .services__item:not(:last-child) {
     margin-bottom: 30px;
@@ -190,6 +197,15 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   }
 }
 @media (max-width: 750px) {
+  .first__content {
+    max-width: 100% !important;
+  }
+  .first__message {
+    display: none;
+  }
+  .first__content {
+    margin-top: 30px;
+  }
   .footer__menu {
     order: 2;
   }
@@ -249,14 +265,17 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   .services__item h4 {
     white-space: normal;
   }
+  .burger {
+    top: 20px!important;
+  }
   .button__front {
     padding: 15px 35px !important;
   }
   .container {
-    padding: 0 15px;
+    padding: 0 15px!important;
   }
   .first__content h2 {
-    font-size: 24px!important;
+    font-size: 20px!important;
   }
   .portfolio__button {
     margin: 30px 0 50px 0!important;
@@ -273,7 +292,30 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   .footer__info {
     font-size: 16px !important;
   }
+  .reviews__titleContent span {
+    font-size: 14px!important;
+  }
+  .reviews__title img {
+    max-width: 60px!important;
+    max-height: 60px!important;
+  }
+  .reviews__item {
+    padding: 15px!important;
+  }
+  .reviews__titleContent {
+    margin-left: 10px!important;
+  }
+  .reviews__titleContent h5 {
+    font-size: 18px!important;
+    margin: 0!important;
+  }
+  .reviews__item p {
+    font-size: 14px!important;
+  }
   .footer {
     padding: 15px!important;
+  }
+  .container__footer {
+    padding: 0!important;
   }
 }
