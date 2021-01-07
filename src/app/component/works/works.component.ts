@@ -26,8 +26,10 @@ export class WorksComponent implements OnInit {
   button: boolean = false;
 
   openDialog(): void {
-    this.someSrv.title = 'Разработка landing page для компании Richersup';
-    this.someSrv.content = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit tempor elit tellus mauris facilisis nulla.';
+    this.someSrv.title = 'Разработка приложения SmartCCTV';
+    this.someSrv.content[0] = "1 Было выполнено";
+    this.someSrv.content[1] = "2 Было выполнено";
+
     const dialogRef = this.dialog.open(DialogDataExampleDialogComponent, {
       width: '70%',
       data: {name: this.name, animal: this.animal}
@@ -46,4 +48,3 @@ export class WorksComponent implements OnInit {
   }
 
 }
-

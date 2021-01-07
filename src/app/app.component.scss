@@ -19,6 +19,7 @@ app-reviews {
 .modal__bot {
   display: flex;
   flex-direction: column;
+  padding-bottom: 15px;
   align-items: center;
 }
 .modal__social a:not(:last-child) {
@@ -26,6 +27,7 @@ app-reviews {
 }
 .modal__span {
   font-size: 12px;
+  font-family: 'ProximaNova', sans-serif;
   line-height: 15px;
   color: #FFFFFF;
 }
@@ -33,11 +35,6 @@ app-reviews {
   white-space: nowrap;
   display: flex;
   flex-direction: column;
-}
-mat-drawer {
-  max-width: 225px;
-  width: 100%;
-  background: #160033;
 }
 .header__menu{
   padding: 25px 15px 15px 15px;
@@ -77,8 +74,67 @@ mat-drawer {
   position: absolute;
   left: 0;
 }
+
+.hidden-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: fixed;
+  list-style:none;
+  margin: 0;
+  box-sizing: border-box;
+  max-width: 225px;
+  width: 100%;
+  background: #160033;
+  height: 100%;
+  top: 0;
+  left: -225px;
+  transition: left .2s;
+  z-index: 12220;
+  -webkit-transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+}
+.hidden-menu li a {text-decoration: none; color:#cacaca;}
+.hidden-menu li a:hover {color:#fff;}
+
+.hidden-menu-ticker {
+  display: none;
+}
+/*общие стили значка-гамбургера, самого лэйбла*/
+.btn-menu {
+  display: none;
+}
+.modal__close {
+  margin-left: 4px;
+}
+.hidden-menu-ticker:checked ~ .btn-menu {
+  top: 20px;
+  left: 185px;
+}
+/*и дальше стили меняющие бургер, двигающие менюшку по событию - нажатие на значек бургера*/
+.hidden-menu-ticker:checked ~ .hidden-menu {
+  left: 0;
+}
 @media (max-width: 1360px) {
   .container {
     padding: 0 30px;
+  }
+}
+@media (max-width: 950px) {
+  .btn-menu {
+    display: flex;
+    color: #fff;
+    padding: 2px;
+    position: absolute;
+    top: 40px;
+    right: 25px;
+    cursor: pointer;
+    transition: left .23s;
+    z-index: 15;
+  }
+}
+@media (max-width: 450px) {
+  .btn-menu {
+    top: 20px;
   }
 }

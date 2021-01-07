@@ -1,10 +1,12 @@
 .dialogs {
   display: flex;
+  color: #160032;
+  font-family: 'ProximaNova', sans-serif!important;
   &__content {
-    width: 50%;
+    width: 40%;
   }
   &__img {
-    width: 50%;
+    width: 60%;
     overflow: hidden;
   }
   h3 {
@@ -12,5 +14,13 @@
     font-size: 24px;
     line-height: 29px;
     color: #160032;
+  }
+  h5 {
+    font-family: 'ProximaNova', sans-serif!important;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  p {
+    font-size: 18px;
   }
 }

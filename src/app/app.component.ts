@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, ElementRef, ViewChild} from '@angular/core';
 import {ViewportScroller} from "@angular/common";
 import {SomeDataService} from "./services/some.service";
 
@@ -9,11 +9,16 @@ import {SomeDataService} from "./services/some.service";
 })
 export class AppComponent {
   title = 'alexis';
+  currentPosition = '';
+
   constructor(
     private viewportScroller: ViewportScroller,
     private someSrv: SomeDataService
   ) {
     this.someSrv = someSrv;
+  }
+  menuClosed(){
+    console.log("хуйня1");
   }
   toServices() {
     this.viewportScroller.scrollToPosition([0, this.someSrv.header]);

@@ -7,7 +7,10 @@ export class SomeDataService {
   works: number = 1;
   reviews: number = 1;
   title: string = 'hello';
-  content: string = 'hello';
+  contents: string = 'hello';
+  content: any[] = [
+    { label: 'Выполнено' }
+  ]
 }
 export class SomeService {
 
