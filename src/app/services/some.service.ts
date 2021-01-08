@@ -11,6 +11,9 @@ export class SomeDataService {
   content: any[] = [
     { label: 'Выполнено' }
   ]
+  images: any[] = [
+    { label: 'Выполнено' }
+  ]
 }
 export class SomeService {
 

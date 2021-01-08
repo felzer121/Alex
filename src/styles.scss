@@ -88,6 +88,13 @@ html {
   position: relative;
   justify-content: center;
 }
+.mat-dialog-content {
+  max-height: 100% !important;
+}
+.cdk-global-overlay-wrapper{
+  padding: 25px 0;
+  box-sizing: border-box;
+}
 .content {
   max-width: 1310px;
   font-family: 'ProximaNova', sans-serif !important;
@@ -101,6 +108,23 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     flex-direction: column;
     height: 100%;
     margin-bottom: 50px;
+  }
+  .dialogs {
+    flex-direction: column!important;
+  }
+  .dialogs__content {
+    margin-top: 1em;
+    box-sizing: border-box;
+    padding: 0 1em;
+    order: 2;
+    width: 100%!important;
+  }
+  .mat-dialog-container {
+    padding: 0!important;
+  }
+  .dialogs__img {
+    order: 1;
+    width: 100%!important;
   }
   .first__content {
     order: 2;
@@ -183,6 +207,10 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     max-width: 100% !important;
     font-weight: 600;
   }
+  .cdk-overlay-pane {
+    margin: 5em 0;
+    overflow-y: scroll!important;
+  }
   .services__item h4{
     font-weight: 600;
   }
@@ -199,6 +227,10 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 @media (max-width: 750px) {
   .first__content {
     max-width: 100% !important;
+  }
+  .cdk-overlay-pane {
+    max-width: 90vw!important;
+    width: 100% !important;
   }
   .first__message {
     display: none;

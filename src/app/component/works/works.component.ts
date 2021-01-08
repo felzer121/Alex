@@ -29,6 +29,88 @@ export class WorksComponent implements OnInit {
     this.someSrv.title = 'Разработка приложения SmartCCTV';
     this.someSrv.content[0] = "1 Было выполнено";
     this.someSrv.content[1] = "2 Было выполнено";
+    this.someSrv.images = [
+      {path: 'assets/img/project_1-1.jpg'},
+      {path: 'assets/img/project_1-2.jpg'},
+      {path: 'assets/img/project_1-3.jpg'},
+      {path: 'assets/img/project_1-4.jpg'},
+      {path: 'assets/img/project_1-5.jpg'}
+    ];
+
+    const dialogRef = this.dialog.open(DialogDataExampleDialogComponent, {
+      width: '70%',
+      data: {name: this.name, animal: this.animal}
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log(result);
+      this.animal = result;
+    });
+  }
+  openProject2(): void {
+    this.someSrv.title = 'Создание сайта';
+    this.someSrv.content[0] = "1 Было выполнено";
+    this.someSrv.content[1] = "2 Было выполнено";
+
+    const dialogRef = this.dialog.open(DialogDataExampleDialogComponent, {
+      width: '70%',
+      data: {name: this.name, animal: this.animal}
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log(result);
+      this.animal = result;
+    });
+  }
+  openProject3(): void {
+    this.someSrv.title = 'Создание сайта';
+    this.someSrv.content[0] = "1 Было выполнено";
+    this.someSrv.content[1] = "2 Было выполнено";
+
+    const dialogRef = this.dialog.open(DialogDataExampleDialogComponent, {
+      width: '70%',
+      data: {name: this.name, animal: this.animal}
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log(result);
+      this.animal = result;
+    });
+  }
+  openProject4(): void {
+    this.someSrv.title = 'Создание сайта';
+    this.someSrv.content[0] = "1 Было выполнено";
+    this.someSrv.content[1] = "2 Было выполнено";
+
+    const dialogRef = this.dialog.open(DialogDataExampleDialogComponent, {
+      width: '70%',
+      data: {name: this.name, animal: this.animal}
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log(result);
+      this.animal = result;
+    });
+  }
+  openProject5(): void {
+    this.someSrv.title = 'Создание сайта';
+    this.someSrv.content[0] = "1 Было выполнено";
+    this.someSrv.content[1] = "2 Было выполнено";
+
+    const dialogRef = this.dialog.open(DialogDataExampleDialogComponent, {
+      width: '70%',
+      data: {name: this.name, animal: this.animal}
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log(result);
+      this.animal = result;
+    });
+  }
+  openProject6(): void {
+    this.someSrv.title = 'Создание сайта';
+    this.someSrv.content[0] = "1 Было выполнено";
+    this.someSrv.content[1] = "2 Было выполнено";
 
     const dialogRef = this.dialog.open(DialogDataExampleDialogComponent, {
       width: '70%',

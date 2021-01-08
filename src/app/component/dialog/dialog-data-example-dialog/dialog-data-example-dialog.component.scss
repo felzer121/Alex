@@ -24,3 +24,25 @@
     font-size: 18px;
   }
 }
+carousel {
+  height: 500px!important;
+}
+@media (max-width: 750px) {
+  carousel {
+    height: 250px!important;
+  }
+  .dialogs h3{
+    font-size: 18px;
+  }
+  .dialogs h5{
+    font-size: 15px;
+  }
+  .dialogs p{
+    font-size: 14px;
+  }
+}
+@media (max-width: 400px) {
+  carousel {
+    height: 200px!important;
+  }
+}

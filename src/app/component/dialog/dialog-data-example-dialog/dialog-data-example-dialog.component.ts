@@ -11,15 +11,10 @@ export class DialogDataExampleDialogComponent implements OnInit {
   constructor(private someSrv: SomeDataService) {}
   title: string = this.someSrv.title;
   content: any[] = this.someSrv.content;
+  images: any[] = this.someSrv.images;
+
   ngOnInit(): void {
 
   }
 
-  images = [
-    {path: 'assets/img/project_1-1.jpg'},
-    {path: 'assets/img/project_1-2.jpg'},
-    {path: 'assets/img/project_1-3.jpg'},
-    {path: 'assets/img/project_1-4.jpg'},
-    {path: 'assets/img/project_1-5.jpg'}
-  ]
 }
