@@ -78,6 +78,14 @@ export class WorksComponent implements OnInit {
     this.someSrv.title = 'Создание сайта';
     this.someSrv.content[0] = "1 Было выполнено";
     this.someSrv.content[1] = "2 Было выполнено";
+    this.someSrv.images = [
+      {path: 'assets/img/project_3-1.png'},
+      {path: 'assets/img/project_3-2.png'},
+      {path: 'assets/img/project_3-3.png'},
+      {path: 'assets/img/project_3-4.png'},
+      {path: 'assets/img/project_3-5.png'},
+      {path: 'assets/img/project_3-6.png'}
+    ];
 
     const dialogRef = this.dialog.open(DialogDataExampleDialogComponent, {
       width: '70%',
@@ -93,6 +101,12 @@ export class WorksComponent implements OnInit {
     this.someSrv.title = 'Создание сайта';
     this.someSrv.content[0] = "1 Было выполнено";
     this.someSrv.content[1] = "2 Было выполнено";
+    this.someSrv.images = [
+      {path: 'assets/img/project_4-1.png'},
+      {path: 'assets/img/project_4-2.png'},
+      {path: 'assets/img/project_4-3.png'},
+      {path: 'assets/img/project_4-4.png'}
+    ];
 
     const dialogRef = this.dialog.open(DialogDataExampleDialogComponent, {
       width: '70%',
@@ -130,7 +144,13 @@ export class WorksComponent implements OnInit {
     this.someSrv.title = 'Создание сайта';
     this.someSrv.content[0] = "1 Было выполнено";
     this.someSrv.content[1] = "2 Было выполнено";
-
+    this.someSrv.images = [
+      {path: 'assets/img/project_6-1.png'},
+      {path: 'assets/img/project_6-2.png'},
+      {path: 'assets/img/project_6-3.png'},
+      {path: 'assets/img/project_6-4.png'},
+      {path: 'assets/img/project_6-5.png'}
+    ];
     const dialogRef = this.dialog.open(DialogDataExampleDialogComponent, {
       width: '70%',
       data: {name: this.name, animal: this.animal}
