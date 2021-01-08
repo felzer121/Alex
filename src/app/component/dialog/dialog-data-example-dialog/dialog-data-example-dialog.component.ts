@@ -12,9 +12,12 @@ export class DialogDataExampleDialogComponent implements OnInit {
   title: string = this.someSrv.title;
   content: any[] = this.someSrv.content;
   images: any[] = this.someSrv.images;
+  test: boolean = true;
 
   ngOnInit(): void {
-
+    if (document.body.clientWidth < 800) {
+      this.test = false;
+    }
   }
 
 }

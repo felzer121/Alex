@@ -92,7 +92,7 @@ html {
   max-height: 100% !important;
 }
 .cdk-global-overlay-wrapper{
-  padding: 25px 0;
+  padding: 50px 0;
   box-sizing: border-box;
 }
 .content {
@@ -112,8 +112,13 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   .dialogs {
     flex-direction: column!important;
   }
+  .mat-dialog-content {
+    margin: 0!important;
+    padding: 0!important;
+  }
   .dialogs__content {
     margin-top: 1em;
+    overflow: hidden;
     box-sizing: border-box;
     padding: 0 1em;
     order: 2;

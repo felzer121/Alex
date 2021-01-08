@@ -1,11 +1,14 @@
 <div mat-dialog-content [ngClass]="'dialogs'">
+  <svg [mat-dialog-close] class="close" _ngcontent-ele-c100="" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path _ngcontent-ele-c100="" d="M16.6573 15.0001L29.6567 2.00058C30.1144 1.5429 30.1144 0.800874 29.6567 0.343257C29.1991 -0.11436 28.457 -0.114419 27.9994 0.343257L15 13.3427L2.00058 0.343257C1.5429 -0.114419 0.800872 -0.114419 0.343256 0.343257C-0.11436 0.800932 -0.114419 1.54296 0.343256 2.00058L13.3427 15L0.343256 27.9995C-0.114419 28.4572 -0.114419 29.1992 0.343256 29.6568C0.572064 29.8856 0.872004 30 1.17194 30C1.47189 30 1.77177 29.8856 2.00063 29.6568L15 16.6574L27.9994 29.6568C28.2282 29.8856 28.5281 30 28.8281 30C29.128 30 29.4279 29.8856 29.6567 29.6568C30.1144 29.1991 30.1144 28.4571 29.6567 27.9995L16.6573 15.0001Z" fill="white"></path>--&gt;
+  </svg>
   <div [ngClass]="'dialogs__content'">
     <h3> {{ title }}</h3>
     <h5>Выполнены следующие задачи:</h5>
     <p *ngFor="let item of content">{{ item }}</p>
   </div>
   <div [ngClass]="'dialogs__img'">
-    <carousel [images]="images" [cellsToShow]="1">
+    <carousel [images]="images" [arrows]="test" [cellsToShow]="1">
     </carousel>
   </div>
 </div>

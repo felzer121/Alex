@@ -22,7 +22,7 @@ export class HeaderComponent implements OnInit {
     this.viewportScroller.scrollToPosition([0, this.someSrv.header]);
   }
   toWorks() {
-    let work = this.someSrv.services + this.someSrv.header;
+    let work = this.someSrv.services + this.someSrv.header + 80;
     this.viewportScroller.scrollToPosition([0, work]);
   }
   toReviews() {
@@ -30,7 +30,7 @@ export class HeaderComponent implements OnInit {
     this.viewportScroller.scrollToPosition([0, work]);
   }
   toContact() {
-    let work = this.someSrv.services + this.someSrv.header + this.someSrv.works + this.someSrv.reviews ;
+    let work = this.someSrv.services + this.someSrv.header + this.someSrv.works + this.someSrv.reviews + 80;
     this.viewportScroller.scrollToPosition([0, work]);
   }
 

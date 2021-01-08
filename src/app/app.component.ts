@@ -21,10 +21,10 @@ export class AppComponent {
     console.log("хуйня1");
   }
   toServices() {
-    this.viewportScroller.scrollToPosition([0, this.someSrv.header]);
+    this.viewportScroller.scrollToPosition([0, this.someSrv.header + 25]);
   }
   toWorks() {
-    let work = this.someSrv.services + this.someSrv.header;
+    let work = this.someSrv.services + this.someSrv.header + 35;
     this.viewportScroller.scrollToPosition([0, work]);
   }
   toReviews() {
@@ -32,7 +32,7 @@ export class AppComponent {
     this.viewportScroller.scrollToPosition([0, work]);
   }
   toContact() {
-    let work = this.someSrv.services + this.someSrv.header + this.someSrv.works + this.someSrv.reviews ;
+    let work = this.someSrv.services + this.someSrv.header + this.someSrv.works + this.someSrv.reviews + 35;
     this.viewportScroller.scrollToPosition([0, work]);
   }
 
