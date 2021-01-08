@@ -27,14 +27,11 @@ export class WorksComponent implements OnInit {
 
   openDialog(): void {
     this.someSrv.title = 'Разработка приложения SmartCCTV';
-    this.someSrv.content[0] = "1 Было выполнено";
-    this.someSrv.content[1] = "2 Было выполнено";
-    this.someSrv.content[2] = "1 Было выполнено";
-    this.someSrv.content[3] = "2 Было выполнено";
-    this.someSrv.content[4] = "1 Было выполнено";
-    this.someSrv.content[5] = "2 Было выполнено";
-    this.someSrv.content[6] = "1 Было выполнено";
-    this.someSrv.content[7] = "2 Было выполнено";
+    this.someSrv.content[0] = "1) Дизайн сайта, настольного приложения и фирменный стиль";
+    this.someSrv.content[1] = "2) Адаптивная верстка, мобильная версия, настольное приложение";
+    this.someSrv.content[2] = "3) Backend ASP.NET Core 3.1";
+    this.someSrv.content[3] = "4) Публикация и поддержка";
+
     this.someSrv.images = [
       {path: 'assets/img/project_1-1.jpg'},
       {path: 'assets/img/project_1-2.jpg'},
@@ -54,9 +51,11 @@ export class WorksComponent implements OnInit {
     });
   }
   openProject2(): void {
-    this.someSrv.title = 'Создание сайта';
-    this.someSrv.content[0] = "1 Было выполнено";
-    this.someSrv.content[1] = "2 Было выполнено";
+    this.someSrv.title = 'Разработка Web-сайта для компании KD';
+    this.someSrv.content[0] = "1) Дизайн сайта и фирменный стиль";
+    this.someSrv.content[1] = "2) Адаптивная верстка, мобильная версия";
+    this.someSrv.content[2] = "3) Натяжка на CMS";
+    this.someSrv.content[3] = "4) Публикация и поддержка сайта";
     this.someSrv.images = [
       {path: 'assets/img/project_2-1.png'},
       {path: 'assets/img/project_2-2.png'},
@@ -75,9 +74,14 @@ export class WorksComponent implements OnInit {
     });
   }
   openProject3(): void {
-    this.someSrv.title = 'Создание сайта';
-    this.someSrv.content[0] = "1 Было выполнено";
-    this.someSrv.content[1] = "2 Было выполнено";
+    this.someSrv.title = 'Разработка Web-сайта для компании Мастер крепежа';
+
+    this.someSrv.content[0] = "1) Дизайн сайта и фирменный стиль";
+    this.someSrv.content[1] = "2) Адаптивная верстка, мобильная версия";
+    this.someSrv.content[2] = "3) Натяжка на CMS";
+    this.someSrv.content[3] = "4) Публикация и поддержка сайта";
+    this.someSrv.content[4] = "5) Продвижение";
+
     this.someSrv.images = [
       {path: 'assets/img/project_3-1.png'},
       {path: 'assets/img/project_3-2.png'},
@@ -98,9 +102,14 @@ export class WorksComponent implements OnInit {
     });
   }
   openProject4(): void {
-    this.someSrv.title = 'Создание сайта';
-    this.someSrv.content[0] = "1 Было выполнено";
-    this.someSrv.content[1] = "2 Было выполнено";
+    this.someSrv.title = 'Разработка мобильного приложения: "Спорт - это жизнь"';
+    
+    this.someSrv.content[0] = "1) Дизайн приложения и фирменный стиль";
+    this.someSrv.content[1] = "2) Мобильное приложение для Android и iOS";
+    this.someSrv.content[2] = "3) Адаптивная верстка";
+    this.someSrv.content[3] = "4) Backend-приложение на ASP.NET Core 3.1";
+    this.someSrv.content[4] = "5) Публикация и поддержка приложения";
+
     this.someSrv.images = [
       {path: 'assets/img/project_4-1.png'},
       {path: 'assets/img/project_4-2.png'},
@@ -119,9 +128,13 @@ export class WorksComponent implements OnInit {
     });
   }
   openProject5(): void {
-    this.someSrv.title = 'Создание сайта';
-    this.someSrv.content[0] = "1 Было выполнено";
-    this.someSrv.content[1] = "2 Было выполнено";
+    this.someSrv.title = 'Разработка Web-сайта по продаже корсетов';
+    
+    this.someSrv.content[0] = "1) Дизайн сайта и фирменный стиль";
+    this.someSrv.content[1] = "2) Адаптивная верстка, мобильная версия";
+    this.someSrv.content[2] = "3) Натяжка на CMS";
+    this.someSrv.content[3] = "4) Публикация и поддержка сайта";
+
     this.someSrv.images = [
       {path: 'assets/img/project_5-1.png'},
       {path: 'assets/img/project_5-2.png'},
@@ -141,9 +154,13 @@ export class WorksComponent implements OnInit {
     });
   }
   openProject6(): void {
-    this.someSrv.title = 'Создание сайта';
-    this.someSrv.content[0] = "1 Было выполнено";
-    this.someSrv.content[1] = "2 Было выполнено";
+    this.someSrv.title = 'Разработка Web-сайта по продаже хлебобулочных изделий';
+    
+    this.someSrv.content[0] = "1) Дизайн сайта и фирменный стиль";
+    this.someSrv.content[1] = "2) Адаптивная верстка, мобильная версия";
+    this.someSrv.content[2] = "3) Натяжка на CMS";
+    this.someSrv.content[3] = "4) Публикация и поддержка сайта";
+    
     this.someSrv.images = [
       {path: 'assets/img/project_6-1.png'},
       {path: 'assets/img/project_6-2.png'},
