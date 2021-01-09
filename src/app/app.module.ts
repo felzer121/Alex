@@ -19,8 +19,9 @@ import { SomeDataService } from './services/some.service';
 import { NgxPageScrollCoreModule } from 'ngx-page-scroll-core';
 import { MatTooltipModule } from "@angular/material/tooltip";
 import { DialogDataExampleDialogComponent } from './component/dialog/dialog-data-example-dialog/dialog-data-example-dialog.component';
-import {MatDialogModule} from "@angular/material/dialog";
-import {MatSidenavModule} from "@angular/material/sidenav";
+import { MatDialogModule}  from "@angular/material/dialog";
+import { MatSidenavModule } from "@angular/material/sidenav";
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -45,7 +46,8 @@ import {MatSidenavModule} from "@angular/material/sidenav";
     NgxPageScrollCoreModule,
     MatTooltipModule,
     MatDialogModule,
-    MatSidenavModule
+    MatSidenavModule,
+    HttpClientModule
   ],
   providers: [
     SomeDataService,
