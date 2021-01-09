@@ -24,12 +24,11 @@
           <mat-checkbox class="example-margin">Я согласен на обработку персональных данных и с условиями пользовательского соглашения</mat-checkbox>
         </section>
       </div>
-      <a href="" [ngClass]="'button'">
-        <button mat-raised-button color="warn" [ngClass]="'button__front button__contact'">
+        <button mat-raised-button color="warn" (click)="sendMessage()" [ngClass]="'button__front button__contact'">
           <div [ngClass]="'button__frontShadow'"></div>
           Отправить
         </button>
-      </a>
+
     </div>
     <div [ngClass]="'contact__illustration'">
       <img src="assets/svg/contact.svg" alt="">
