@@ -21,7 +21,7 @@
       </mat-form-field>
       <div>
         <section class="contact__section">
-          <mat-checkbox #isAgreement class="example-margin">Я согласен на обработку персональных данных и с условиями пользовательского соглашения</mat-checkbox>
+          <mat-checkbox required #isAgreement class="example-margin">Я согласен на обработку персональных данных и с условиями пользовательского соглашения</mat-checkbox>
         </section>
       </div>
       <button type="button" (click)="sendMessage(name.value, email.value, phone.value, message.value, isAgreement.checked)" color="warn" [ngClass]="'button__front button__contact'">
