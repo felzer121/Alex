@@ -19,7 +19,7 @@ export class ContactUsModel {
 export class CrudService {
 
   // REST API
-  endpoint = 'http://alexis.team';
+  endpoint = 'https://alexis.team';
 
   constructor(private httpClient: HttpClient) { }
 
