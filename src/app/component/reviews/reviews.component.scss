@@ -26,6 +26,11 @@
   .carousel-dots div:nth-child(5), .carousel-dots div:nth-child(6) {
     display: none!important;
   }
+  @media (max-width: 800px) {
+    .carousel-dots div:nth-child(5), .carousel-dots div:nth-child(6) {
+      display: inline-block!important;
+    }
+  }
   .carousel-dot {
     padding: 2px;
     border: none!important;
