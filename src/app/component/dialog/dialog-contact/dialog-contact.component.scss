@@ -1,0 +1,54 @@
+.dialogs {
+  display: flex;
+  color: #160032;
+  font-family: 'ProximaNova', sans-serif!important;
+  &__content {
+    width: 40%;
+  }
+  &__img {
+    width: 60%;
+    overflow: hidden;
+  }
+  h3 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    color: #160032;
+  }
+  h5 {
+    font-family: 'ProximaNova', sans-serif!important;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  p {
+    font-size: 18px;
+  }
+}
+.close {
+  position: absolute;
+  top: 10px;
+  z-index: 0;
+  right: 10px;
+}
+carousel {
+  height: 500px!important;
+}
+@media (max-width: 750px) {
+  carousel {
+    height: 250px!important;
+  }
+  .dialogs h3{
+    font-size: 18px;
+  }
+  .dialogs h5{
+    font-size: 15px;
+  }
+  .dialogs p{
+    font-size: 14px;
+  }
+}
+@media (max-width: 400px) {
+  carousel {
+    height: 200px!important;
+  }
+}

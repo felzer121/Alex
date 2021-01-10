@@ -1,7 +1,8 @@
-import { Component, Inject, Injectable, Input, OnInit, ViewEncapsulation } from '@angular/core';
+import {Component, ElementRef, Inject, Injectable, Input, OnInit, ViewChild, ViewEncapsulation} from '@angular/core';
 import { ContactUsModel, CrudService } from '../../services/shared/crud.service';
 import { MatDialog, MAT_DIALOG_DATA } from "@angular/material/dialog";
 import { DialogDataExampleDialogComponent } from "../dialog/dialog-data-example-dialog/dialog-data-example-dialog.component";
+import { DialogContactComponent } from "../dialog/dialog-contact/dialog-contact.component";
 import {SomeDataService} from "../../services/some.service";
 
 @Component({
@@ -17,7 +18,10 @@ export class ContactComponent implements OnInit {
 
   constructor(public dialog: MatDialog, private someSrv: SomeDataService, private crudService: CrudService) {
   }
-
+  @ViewChild('name') name: ElementRef | undefined;
+  @ViewChild('email') email: ElementRef | undefined;
+  @ViewChild('phone') phone: ElementRef | undefined;
+  @ViewChild('message') message: ElementRef | undefined;
   ngOnInit(): void {
     this.someSrv.title = 'Ваше сообщение успешно отправлено';
     this.someSrv.images = [
@@ -35,14 +39,20 @@ export class ContactComponent implements OnInit {
     this.contactUsModel.message = message;
     this.contactUsModel.isAgreement = isAgreement;
 
-
-    const dialogRef = this.dialog.open(DialogDataExampleDialogComponent, {
+    const dialogRef = this.dialog.open(DialogContactComponent, {
       width: '70%',
     });
     dialogRef.afterClosed().subscribe((result: any) => {
       console.log(result);
     });
-
+    // @ts-ignore
+    this.name.nativeElement.value = '';
+    // @ts-ignore
+    this.email.nativeElement.value = '';
+    // @ts-ignore
+    this.phone.nativeElement.value = '';
+      // @ts-ignore
+    this.message.nativeElement.value = '';
     this.crudService.sendMessage(this.contactUsModel).subscribe((data: {}) => {
       console.log(data);
     })

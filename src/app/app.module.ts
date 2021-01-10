@@ -22,6 +22,7 @@ import { DialogDataExampleDialogComponent } from './component/dialog/dialog-data
 import { MatDialogModule}  from "@angular/material/dialog";
 import { MatSidenavModule } from "@angular/material/sidenav";
 import { HttpClientModule } from '@angular/common/http';
+import { DialogContactComponent } from './component/dialog/dialog-contact/dialog-contact.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { HttpClientModule } from '@angular/common/http';
     ReviewsComponent,
     ContactComponent,
     FooterComponent,
-    DialogDataExampleDialogComponent
+    DialogDataExampleDialogComponent,
+    DialogContactComponent
   ],
   imports: [
     BrowserModule,
