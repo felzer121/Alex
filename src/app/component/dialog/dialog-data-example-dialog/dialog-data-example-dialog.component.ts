@@ -13,6 +13,7 @@ export class DialogDataExampleDialogComponent implements OnInit {
   content: any[] = this.someSrv.content;
   images: any[] = this.someSrv.images;
   test: boolean = true;
+  subtitle: boolean = this.someSrv.subtitle;
 
   ngOnInit(): void {
     if (document.body.clientWidth < 800) {

@@ -4,7 +4,7 @@
   </svg>
   <div [ngClass]="'dialogs__content'">
     <h3> {{ title }}</h3>
-    <h5>Выполнены следующие задачи:</h5>
+    <h5 *ngIf="subtitle">Выполнены следующие задачи:</h5>
     <p *ngFor="let item of content">{{ item }}</p>
   </div>
   <div [ngClass]="'dialogs__img'">
