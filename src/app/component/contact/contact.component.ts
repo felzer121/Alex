@@ -33,28 +33,35 @@ export class ContactComponent implements OnInit {
   }
 
   public sendMessage(name: string, email:string, phone:string, message:string, isAgreement: boolean) {
+    let ean = true;
     this.contactUsModel.name = name;
     this.contactUsModel.email = email;
     this.contactUsModel.phone = phone;
     this.contactUsModel.message = message;
     this.contactUsModel.isAgreement = isAgreement;
+    if (name == '' || email == '' || phone == '') {
+      ean = false
+    }
 
-    const dialogRef = this.dialog.open(DialogContactComponent, {
-      width: '70%',
-    });
-    dialogRef.afterClosed().subscribe((result: any) => {
-      console.log(result);
-    });
-    // @ts-ignore
-    this.name.nativeElement.value = '';
-    // @ts-ignore
-    this.email.nativeElement.value = '';
-    // @ts-ignore
-    this.phone.nativeElement.value = '';
+    if (ean){
+      const dialogRef = this.dialog.open(DialogContactComponent, {
+        width: '70%',
+      });
+      dialogRef.afterClosed().subscribe((result: any) => {
+        console.log(result);
+      });
+      console.log('отправлено')
       // @ts-ignore
-    this.message.nativeElement.value = '';
-    this.crudService.sendMessage(this.contactUsModel).subscribe((data: {}) => {
-      console.log(data);
-    })
+      this.name.nativeElement.value = '';
+      // @ts-ignore
+      this.email.nativeElement.value = '';
+      // @ts-ignore
+      this.phone.nativeElement.value = '';
+      // @ts-ignore
+      this.message.nativeElement.value = '';
+      this.crudService.sendMessage(this.contactUsModel).subscribe((data: {}) => {
+        console.log(data);
+      })
+    }
   }
 }

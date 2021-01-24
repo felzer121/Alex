@@ -5,19 +5,19 @@
       <p>Заполните форму и наш менеджер свяжется с вами в ближайшее время</p>
       <mat-form-field appearance="fill">
         <mat-label>Ваше имя</mat-label>
-        <input #name ngModel required matInput>
+        <input #name ngModel type="text" required matInput>
       </mat-form-field>
       <mat-form-field appearance="fill">
         <mat-label>Ваш e-mail</mat-label>
-        <input #email ngModel required matInput>
+        <input #email ngModel type="email" required matInput>
       </mat-form-field>
       <mat-form-field appearance="fill">
         <mat-label>Ваше номер телефона</mat-label>
-        <input #phone ngModel required matInput>
+        <input #phone ngModel type="phone" required matInput>
       </mat-form-field>
       <mat-form-field appearance="fill">
         <mat-label>Напишите ваш комментарий</mat-label>
-        <textarea #message ngModel matInput></textarea>
+        <textarea #message ngModel type="text" matInput></textarea>
       </mat-form-field>
       <div>
         <section class="contact__section">
